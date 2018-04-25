@@ -1,0 +1,22 @@
+{
+  "name": "lectionary-2018",
+  "version": "1.0.0",
+  "description": "2018년 교회력 개신교, 감리교회",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daworks/lectionary-2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daworks/lectionary-2018/issues"
+  },
+  "homepage": "https://github.com/Daworks/lectionary-2018#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

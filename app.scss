@@ -1,9 +1,10 @@
 #lectionary2018 {
-	margin:0;
 	padding:0;
 	font:14px/18px sans-serif;
 	position:relative;
-
+	max-width:1160px;
+	margin:0 auto;
+	border:1px solid #eee;
 	.month-group {
 		display:block;
 		position:relative;
@@ -26,13 +27,15 @@
 		justify-content:flex-start;
 		border-bottom:1px solid #eee;
 		flex-wrap:wrap;
+		align-items:stretch;
+
 		@media(max-width:768px) {
 			flex-direction:column;
 		}
 		&:after {
 			content:'';
 			clear:both;
-			with:100%;
+			width:100%;
 			display:block;
 		}
 		&.header {
@@ -48,7 +51,7 @@
 			height:32px;
 			background-color:#fff;
 			color:#000;
-			margin-bottom:10px;
+			margin:10px;
 		}
 		.download {
 			text-decoration:none;
@@ -62,6 +65,7 @@
 			margin-left:10px;
 			background-color:#eee;
 			color:#000;
+			margin:10px;
 			transition:all .3s ease;
 			&:hover {
 				background-color:#4E4F5F;
@@ -157,17 +161,20 @@
 			margin:0;
 			padding:10px;
 			list-style-type: none;
+			flex-basis:calc(100% - 520px);
+			align-items:stretch;
 			@media (min-width:1024px) {
 				li {
 					display:inline-block;
 					&:after {
 						content:'/';
-						padding:10px;
+						margin:0 5px;
 						color:#ccc;
 					}
 					&:last-child {
 						&:after {
 							content:'';
+							margin-right:0;
 						}
 					}
 
